@@ -22,9 +22,3 @@ describe("Navigation component", () => {
     });
   });
 });
-
-// Create a nav component
-// Component should contain a <nav> semantic tag
-// Component should contain an unordered list
-// The unordered list should contain 4 list items
-// With the following text content - 1. Home, 2. About, 3. Projects, 4. Contact
