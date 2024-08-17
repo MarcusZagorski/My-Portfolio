@@ -40,6 +40,10 @@
     padding: 9rem 0 3rem 0;
   }
 
+  .hero-container img {
+    padding-top: 0.5rem;
+  }
+
   .hero-container h1 {
     font-size: var(--heading-mobile);
     line-height: 40px;
