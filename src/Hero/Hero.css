@@ -118,7 +118,6 @@ main {
   background: var(--cta-btn-gradient);
   color: white;
   border: none;
-  letter-spacing: 0.2rem;
   box-shadow: var(--cta-btn-shadow);
 }
 
