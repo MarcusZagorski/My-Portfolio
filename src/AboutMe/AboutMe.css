@@ -58,6 +58,11 @@
   .project-paragraph {
     font-size: 1rem;
   }
+
+  .about-me {
+    transform: translate(0, -10%);
+    padding: 8rem 1.6rem;
+  }
 }
 
 @media only screen and (min-width: 932px) and (max-width: 2180px) {
@@ -73,6 +78,11 @@
 
   .background p {
     width: 63.2rem;
+  }
+
+  .about-me {
+    transform: translate(0, -10%);
+    padding: 1rem 6.8rem;
   }
 
   hr {
@@ -118,11 +128,6 @@
 .arrow {
   width: 135px;
   height: 508px;
-}
-
-.about-me {
-  transform: translate(0, -10%);
-  padding: 1rem 6.8rem;
 }
 
 .who-am-i {

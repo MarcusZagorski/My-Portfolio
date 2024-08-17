@@ -21,7 +21,7 @@ function App() {
     <>
       <Nav width={width} />
       <Hero width={width} />
-      <AboutMe />
+      <AboutMe width={width} />
       {/*      <Projects />
       <Blog />
       <Contact /> */}
