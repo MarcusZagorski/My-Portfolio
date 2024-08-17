@@ -1,0 +1,28 @@
+.blog-container {
+  padding: 1rem 6.8rem;
+  height: 120.6rem;
+  border-bottom: 2px solid rgb(206 192 218 / 40%);
+}
+
+.blog,
+.coming-soon {
+  font-size: 6.25rem;
+  -webkit-text-stroke: white 4px;
+  color: #2d2d2a;
+  text-shadow: -8px 0px 4px black;
+  margin-top: 5.2rem;
+}
+
+.blog span {
+  color: white;
+}
+
+.coming-soon {
+  height: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.coming-soon span {
+  color: white;
+}

@@ -1,0 +1,173 @@
+@media only screen and (max-width: 932px) {
+  .arrow {
+    transform: translate(-50%, 0);
+    position: relative;
+    left: 50%;
+  }
+
+  .who-am-i {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 2180px) {
+  .who-am-i {
+    font-size: 6.25rem;
+  }
+}
+
+.arrow {
+  width: 135px;
+  height: 508px;
+}
+
+.about-me {
+  transform: translate(0, -10%);
+  padding: 1rem 6.8rem;
+}
+
+.who-am-i {
+  -webkit-text-stroke: white 4px;
+  color: #2d2d2a;
+  text-shadow: -8px 0px 4px black;
+  margin-top: 5.2rem;
+}
+
+.who-am-i span {
+  color: white;
+}
+
+.who-am-i-container {
+  display: grid;
+  width: 61.2rem;
+  gap: 2rem;
+  margin-top: 4.2rem;
+}
+
+.background,
+.skills-and-tech,
+.about-me-projects {
+  color: white;
+  font-size: var(--heading);
+}
+
+.background p {
+  font-size: var(--paragraph);
+  color: var(--paragraph-color);
+  line-height: 2.7rem;
+  width: 63.2rem;
+  margin-top: 3rem;
+  font-weight: 300;
+}
+
+hr {
+  margin-top: 2rem;
+  border: 2px solid rgb(206, 192, 218, 40%);
+  width: 17.25rem;
+}
+
+.skills-and-tech p {
+  font-size: 1.5rem;
+  color: var(--paragraph-color);
+  line-height: 2.7rem;
+  width: 63.2rem;
+  margin-top: 3rem;
+}
+
+.skills-container {
+  height: 10.2rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  justify-items: center;
+  border: 1px solid rgb(206, 192, 218, 40%);
+  border-radius: 12px;
+  margin-top: 3rem;
+  width: 52rem;
+  background: rgb(0, 0, 0, 12%);
+}
+
+.html-svg,
+.css-svg,
+.js-svg,
+.react-svg,
+.nodejs-svg,
+.postgresql-svg,
+.photoshop-svg {
+  height: 4.7rem;
+  width: 100%;
+  border-right: 1px solid rgb(206, 192, 218, 40%);
+  align-content: center;
+  text-align: center;
+}
+
+.html-svg,
+.css-svg,
+.js-svg,
+.react-svg,
+.nodejs-svg,
+.postgresql-svg,
+.photoshop-svg,
+.figma-svg {
+  filter: drop-shadow(0 8px 8px rgb(0, 0, 0, 36%));
+}
+
+.about-me-projects-container {
+  width: 63rem;
+  height: 24rem;
+  justify-items: center;
+  border: 1px solid rgb(206, 192, 218, 40%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-top: 3rem;
+  background: rgb(0, 0, 0, 12%);
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 1fr 4rem 8rem;
+  align-items: center;
+  justify-items: center;
+  padding: 0 1.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  width: 12rem;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.project-paragraph,
+.lets-connect {
+  color: var(--paragraph-color);
+  font-weight: 300;
+}
+
+.project-paragraph {
+  font-size: 1.4rem;
+}
+
+.lets-connect {
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+.lets-connect a {
+  text-decoration: underline;
+}
+
+.about-me-projects-container div:nth-child(2) {
+  border-left: 1px solid rgb(206, 192, 218, 40%);
+  border-right: 1px solid rgb(206, 192, 218, 40%);
+}
+
+.background h1,
+.skills-and-tech h1,
+.about-me-projects h1 {
+  font-size: var(--heading);
+}

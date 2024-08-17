@@ -1,8 +1,9 @@
 import "./Nav.css";
 
-const Nav = () => {
-  const links = ["Home", "About", "Projects", "Contact"];
-  return (
+const Nav = ({ width }) => {
+  const links = ["Home", "About", "Projects", "Blog"];
+
+  return width >= 932 ? (
     <nav>
       <img
         src="/logo-design.png"
@@ -22,6 +23,19 @@ const Nav = () => {
           );
         })}
       </ul>
+      <button className="contactme-btn">CONTACT ME</button>
+    </nav>
+  ) : (
+    <nav>
+      <img
+        src="/logo-design.png"
+        alt="My logo displaying my initials MZ (Marcus Zagorski)"
+      />
+      <div className="hamburger">
+        <span className="hamburger-menu"></span>
+        <span className="hamburger-menu"></span>
+        <span className="hamburger-menu"></span>
+      </div>
     </nav>
   );
 };

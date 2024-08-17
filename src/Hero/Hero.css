@@ -1,0 +1,131 @@
+@media only screen and (min-width: 932px) and (max-width: 2130px) {
+  main {
+    height: 58.8rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 43.25rem 1fr;
+    padding: 0 11.2rem;
+  }
+
+  .hero-container h1 {
+    font-size: var(--heading);
+    line-height: 60px;
+    padding-top: 0.5rem;
+  }
+
+  .hero-container div:nth-child(2) {
+    text-align: end;
+  }
+
+  .sub-head {
+    padding-top: 1.25rem;
+    width: 36.4rem;
+    font-size: var(--paragraph);
+  }
+
+  .view-work-btn {
+    margin: 2rem 0 0 0.25rem;
+  }
+}
+
+@media only screen and (max-width: 932px) {
+  main {
+    height: 62rem;
+  }
+
+  .hero-container {
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+    padding: 9rem 0 3rem 0;
+  }
+
+  .hero-container h1 {
+    font-size: var(--heading-mobile);
+    line-height: 40px;
+    padding-top: 0.5rem;
+  }
+
+  .sub-head {
+    padding-top: 0.25rem;
+    width: 20rem;
+    font-size: var(--paragraph-mobile);
+    margin: 0 auto;
+  }
+
+  .view-work-btn {
+    margin-right: 1rem;
+  }
+
+  .cta-btns {
+    margin: 2rem 0 0 0.25rem;
+  }
+
+  .social-media-icons {
+    margin-top: 8.2rem;
+  }
+}
+
+main {
+  background: url(./bg-hero.png);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin-top: 10rem;
+}
+
+.hero-container {
+  display: grid;
+  height: 100%;
+}
+
+.name {
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+}
+
+.name,
+.sub-head {
+  font-weight: 300;
+  color: var(--paragraph-color);
+}
+
+.hero-container h1 {
+  color: white;
+}
+
+.social-media-icons {
+  color: white;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-content: end;
+  padding-bottom: 3.5rem;
+}
+
+.hero-container div:nth-child(1),
+.hero-container div:nth-child(2) {
+  align-content: end;
+}
+
+.view-work-btn {
+  width: max-content;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: var(--cta-btn-gradient);
+  color: white;
+  border: none;
+  letter-spacing: 0.2rem;
+  box-shadow: var(--cta-btn-shadow);
+}
+
+.social-media-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 1.8rem;
+}
+
+.social-media-container svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}

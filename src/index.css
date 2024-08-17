@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 * {
   padding: 0;
@@ -7,13 +7,29 @@
 }
 
 body {
-  font-family: "Karla", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  font-family: "Kulim Park", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  background: #2d2d2a;
+  letter-spacing: 0.1rem;
 }
 
 :root {
-  --heading: 7.4rem;
-  --sub-heading: 3.8rem;
-  --paragraph: 1.8rem;
-  --linear-gradient: linear-gradient(-90deg, #0b4d33, #237a57);
+  --heading: 4.25rem;
+  --heading-mobile: 2rem;
+  --paragraph: 1.4rem;
+  --paragraph-mobile: 1rem;
+  --cta-btn-shadow: 0px 8px 8px 0px rgb(0, 0, 0, 36%);
+  --cta-btn-gradient: linear-gradient(#a466d9, #62318c);
+  --paragraph-color: #cec0da;
+}
+
+.contactme-btn {
+  width: max-content;
+  justify-self: end;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: var(--cta-btn-gradient);
+  color: white;
+  border: none;
+  box-shadow: var(--cta-btn-shadow);
 }
