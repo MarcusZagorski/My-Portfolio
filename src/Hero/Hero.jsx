@@ -1,5 +1,6 @@
 import "./Hero.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import ImageOfMe from "../assets/button-of-me.png";
 
 const Hero = ({ width }) => {
   // const contactMe = [
@@ -45,7 +46,7 @@ const Hero = ({ width }) => {
             <button className="view-work-btn">VIEW MY WORK</button>
           </div>
           <div>
-            <img src="./button-of-me.png" alt="Circular image of me" />
+            <img src={ImageOfMe} alt="Circular image of me" />
           </div>
           <div className="social-media-icons">
             <div className="social-media-container">
@@ -70,7 +71,7 @@ const Hero = ({ width }) => {
           <p className="name">MARCUS ZAGORSKI</p>
 
           <div>
-            <img src="./button-of-me.png" alt="Circular image of me" />
+            <img src={ImageOfMe} alt="Circular image of me" />
           </div>
 
           <div>

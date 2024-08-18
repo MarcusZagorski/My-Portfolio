@@ -71,7 +71,7 @@
 }
 
 main {
-  background: url(./bg-hero.png);
+  background: url(../assets/bg-hero.png);
   background-size: cover;
   position: relative;
   z-index: 1;

@@ -1,4 +1,5 @@
 import "./Nav.css";
+import LogoDesign from "../assets/logo-design.png";
 
 const Nav = ({ width }) => {
   const links = ["Home", "About", "Projects", "Blog"];
@@ -6,7 +7,7 @@ const Nav = ({ width }) => {
   return width >= 932 ? (
     <nav>
       <img
-        src="/logo-design.png"
+        src={LogoDesign}
         alt="My logo displaying my initials MZ (Marcus Zagorski)"
       />
       <ul>
