@@ -29,7 +29,7 @@ const Nav = ({ width }) => {
   ) : (
     <nav>
       <img
-        src="/logo-design.png"
+        src={LogoDesign}
         alt="My logo displaying my initials MZ (Marcus Zagorski)"
       />
       <div className="hamburger">
