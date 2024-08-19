@@ -22,9 +22,9 @@ function App() {
       <Nav width={width} />
       <Hero width={width} />
       <AboutMe width={width} />
-      {/*      <Projects />
-      <Blog />
-      <Contact /> */}
+      <Projects width={width} />
+      {/* <Blog /> */}
+      {/* <Contact /> */}
     </>
   );
 }

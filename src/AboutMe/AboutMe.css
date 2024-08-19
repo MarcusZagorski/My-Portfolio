@@ -51,7 +51,7 @@
 
   .lets-connect {
     text-align: start;
-    line-height: 40px;
+    line-height: 2.7rem;
     width: 19rem;
   }
 
@@ -61,6 +61,14 @@
 
   .about-me {
     padding: 8rem 1.6rem;
+  }
+
+  .who-am-i {
+    -webkit-text-stroke: white 2px;
+  }
+
+  .background p {
+    font-size: var(--paragraph-mobile);
   }
 }
 
@@ -122,6 +130,14 @@
   .project-paragraph {
     font-size: 1.4rem;
   }
+
+  .who-am-i {
+    -webkit-text-stroke: white 4px;
+  }
+
+  .background p {
+    font-size: var(--paragraph);
+  }
 }
 
 .arrow {
@@ -130,7 +146,6 @@
 }
 
 .who-am-i {
-  -webkit-text-stroke: white 4px;
   color: #2d2d2a;
   text-shadow: -8px 0px 4px black;
   margin-top: 5.2rem;
@@ -153,7 +168,6 @@
 }
 
 .background p {
-  font-size: var(--paragraph);
   color: var(--paragraph-color);
   line-height: 2.7rem;
   margin-top: 3rem;
