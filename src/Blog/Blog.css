@@ -1,16 +1,41 @@
+@media only screen and (max-width: 932px) {
+  .blog,
+  .coming-soon {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .blog {
+    margin-top: 5.2rem;
+  }
+
+  .coming-soon {
+    margin: 15.2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 2130px) {
+  .blog-container {
+    padding: 1rem 6.8rem;
+    height: 120.6rem;
+  }
+
+  .blog,
+  .coming-soon {
+    font-size: 6.25rem;
+    margin-top: 5.2rem;
+  }
+}
+
 .blog-container {
-  padding: 1rem 6.8rem;
-  height: 120.6rem;
   border-bottom: 2px solid rgb(206 192 218 / 40%);
 }
 
 .blog,
 .coming-soon {
-  font-size: 6.25rem;
   -webkit-text-stroke: white 4px;
   color: #2d2d2a;
   text-shadow: -8px 0px 4px black;
-  margin-top: 5.2rem;
 }
 
 .blog span {

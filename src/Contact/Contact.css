@@ -1,5 +1,36 @@
-form {
-  padding: 1rem 6.8rem;
+@media only screen and (max-width: 932px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    padding: 1rem 1.2rem;
+  }
+
+  .contact-title,
+  .contact-title span {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 932px) and (max-width: 2130px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, max-content);
+  }
+
+  form {
+    padding: 1rem 6.8rem;
+  }
+
+  .contact-title,
+  .contact-title span {
+    font-size: 6.25rem;
+    text-align: end;
+  }
 }
 
 input {
@@ -12,9 +43,6 @@ input {
 }
 
 .form-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, max-content);
   background: rgb(0, 0, 0, 12%);
   gap: 2.3rem;
   padding: 2.3rem;
@@ -41,11 +69,9 @@ input {
 
 .contact-title,
 .contact-title span {
-  font-size: 6.25rem;
   text-shadow: -8px 0px 4px black;
   -webkit-text-stroke: white 4px;
   margin-top: 5.2rem;
-  text-align: end;
 }
 
 .contact-title {

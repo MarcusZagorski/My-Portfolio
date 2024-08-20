@@ -23,8 +23,8 @@ function App() {
       <Hero width={width} />
       <AboutMe width={width} />
       <Projects width={width} />
-      {/* <Blog /> */}
-      {/* <Contact /> */}
+      <Blog />
+      <Contact />
     </>
   );
 }
