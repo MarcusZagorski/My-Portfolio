@@ -131,4 +131,10 @@ main {
 .social-media-container svg {
   width: 2.8rem;
   height: 2.8rem;
+  transition: ease-in-out 0.2s;
+}
+
+.social-media-container svg:hover,
+.social-media-container svg:active {
+  color: #a466d9;
 }
