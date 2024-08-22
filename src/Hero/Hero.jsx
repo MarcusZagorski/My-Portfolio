@@ -41,7 +41,12 @@ const Hero = ({ width, heroRef, projectsRef, contactRef }) => {
               Creating stunning & functional web experiences with HTML, CSS, JS,
               React, NodeJS & Figma
             </p>
-            <button className="view-work-btn">VIEW MY WORK</button>
+            <button
+              className="view-work-btn"
+              onClick={() => clickTo(projectsRef)}
+            >
+              VIEW MY WORK
+            </button>
           </div>
           <div>
             <img src={ImageOfMe} alt="Circular image of me" />
