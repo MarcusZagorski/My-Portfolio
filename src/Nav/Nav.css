@@ -100,11 +100,12 @@ ul li a:hover .filled {
   background: #2d2d2a;
   position: fixed;
   top: 0;
+  width: 100vw;
 }
 
 .links-container {
   display: grid;
-  height: 100vh;
+  gap: 4rem;
   align-items: center;
   justify-content: center;
   color: white;
