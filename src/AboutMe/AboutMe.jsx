@@ -1,7 +1,7 @@
 import "./AboutMe.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
-const AboutMe = ({ width }) => {
+const AboutMe = ({ width, aboutMeRef }) => {
   const projects = [
     {
       svgIcon: "ant-design:api-filled",
@@ -51,7 +51,7 @@ const AboutMe = ({ width }) => {
           </defs>
         </svg>
       )}
-      <h1 className="who-am-i">
+      <h1 className="who-am-i" ref={aboutMeRef}>
         WHO AM <span>I</span>?
       </h1>
       <div className="who-am-i-container">

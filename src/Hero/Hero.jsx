@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import "./Hero.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import ImageOfMe from "../assets/button-of-me.png";
 
-const Hero = ({ width }) => {
+const Hero = ({ width, heroRef }) => {
   // const contactMe = [
   //   "www.github.com/",
   //   "www.linkedin.com/en",
@@ -32,7 +33,7 @@ const Hero = ({ width }) => {
   ];
   return width >= 932 ? (
     <>
-      <main>
+      <main className="hero" ref={heroRef}>
         <div className="hero-container">
           <div>
             <p className="name">MARCUS ZAGORSKI</p>

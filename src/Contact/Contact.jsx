@@ -1,6 +1,6 @@
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="contact-me">
       <h1 className="contact-title">
         CONT<span>ACT</span>
       </h1>
@@ -29,6 +29,7 @@ const Contact = () => {
           name="firstName"
           id="fname"
           placeholder="First Name"
+          ref={contactRef}
         ></input>
 
         <input

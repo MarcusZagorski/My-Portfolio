@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "./App.css";
 import Nav from "./Nav/Nav";
@@ -17,14 +17,22 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const refs = {
+    heroRef: useRef(),
+    aboutMeRef: useRef(),
+    projectsRef: useRef(),
+    blogRef: useRef(),
+    contactRef: useRef(),
+  };
+
   return (
     <>
-      <Nav width={width} />
-      <Hero width={width} />
-      <AboutMe width={width} />
-      <Projects width={width} />
-      <Blog />
-      <Contact />
+      <Nav width={width} refs={refs} />
+      <Hero width={width} heroRef={refs.heroRef} />
+      <AboutMe width={width} aboutMeRef={refs.aboutMeRef} />
+      <Projects width={width} projectsRef={refs.projectsRef} />
+      <Blog blogRef={refs.blogRef} />
+      <Contact contactRef={refs.contactRef} />
     </>
   );
 }

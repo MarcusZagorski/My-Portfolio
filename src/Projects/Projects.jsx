@@ -2,7 +2,7 @@ import "./Projects.css";
 import { useState } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
-const Projects = ({ width }) => {
+const Projects = ({ width, projectsRef }) => {
   const [projectIndex, setProjectIndex] = useState(0);
   let projects = [
     {
@@ -43,7 +43,7 @@ const Projects = ({ width }) => {
     },
   ];
   return (
-    <section className="projects">
+    <section className="projects" ref={projectsRef}>
       <h1>
         PRO<span>JECTS</span>
       </h1>
@@ -122,7 +122,11 @@ const Projects = ({ width }) => {
                   {projects[projectIndex].projectSummary}
                 </p>
                 <div
-                  style={{ backgroundSize: "cover", borderRadius: "80px" }}
+                  style={{
+                    backgroundSize: "cover",
+                    borderRadius: "80px",
+                    marginTop: "0.8rem",
+                  }}
                   className={`${projects[projectIndex].imageClass}`}
                 ></div>
 
