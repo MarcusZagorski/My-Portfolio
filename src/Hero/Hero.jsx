@@ -3,15 +3,12 @@ import "./Hero.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import ImageOfMe from "../assets/button-of-me.png";
 
-const Hero = ({ width, heroRef }) => {
-  // const contactMe = [
-  //   "www.github.com/",
-  //   "www.linkedin.com/en",
-  //   "www.whatsapp.com",
-  //   "www.twitter.com",
-  // ];
-
-  // let count = 0;
+const Hero = ({ width, heroRef, projectsRef, contactRef }) => {
+  const clickTo = (ref) => {
+    ref.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   const contactMe = [
     {
@@ -24,11 +21,11 @@ const Hero = ({ width, heroRef }) => {
     },
     {
       icon: "mingcute:whatsapp-fill",
-      link: "",
+      link: "https://wa.me/+447511173832",
     },
     {
       icon: "prime:twitter",
-      link: "",
+      link: "https://x.com/matszCoder",
     },
   ];
   return width >= 932 ? (
@@ -86,8 +83,18 @@ const Hero = ({ width, heroRef }) => {
           </div>
 
           <div className="cta-btns">
-            <button className="view-work-btn">VIEW MY WORK</button>
-            <button className="contactme-btn">CONTACT ME</button>
+            <button
+              className="view-work-btn"
+              onClick={() => clickTo(projectsRef)}
+            >
+              VIEW MY WORK
+            </button>
+            <button
+              className="contactme-btn"
+              onClick={() => clickTo(contactRef)}
+            >
+              CONTACT ME
+            </button>
           </div>
 
           <div className="social-media-icons">

@@ -17,6 +17,9 @@ const Projects = ({ width, projectsRef }) => {
         "akar-icons:postgresql-fill",
       ],
       imageClass: "fs-project",
+      liveView: "https://fs-project-assessment.netlify.app",
+      githubRepo:
+        "https://github.com/MarcusZagorski/Full-Stack-Project-Assessment",
     },
     {
       projectNum: 2,
@@ -25,6 +28,8 @@ const Projects = ({ width, projectsRef }) => {
         "Developed a Chat server application that allows users to send messages back and forth, and delete messages at their own leisure via a server hosted on Glitch. All messages come with an automatic time stamp, alongside an aesthetically pleasing design.",
       builtUsing: ["mdi:react", "mdi:nodejs", "flowbite:css-solid"],
       imageClass: "chat-server",
+      liveView: "https://mzagorski-chat-server.netlify.app",
+      githubRepo: "https://github.com/MarcusZagorski/react-chat-server",
     },
     {
       projectNum: 3,
@@ -33,6 +38,8 @@ const Projects = ({ width, projectsRef }) => {
         "Developed an application displaying regional high scores. My approach for this project was to showcase my responsive design implementation. The project aimed to demonstrate proficiency in crafting adaptive user interfaces tailored to diverse screen sizes and devices.",
       builtUsing: ["mdi:react", "flowbite:css-solid"],
       imageClass: "high-scores",
+      liveView: "https://mzag-high-score-table.netlify.app/",
+      githubRepo: "https://github.com/MarcusZagorski/high-score-tables",
     },
     {
       projectNum: 4,
@@ -40,6 +47,9 @@ const Projects = ({ width, projectsRef }) => {
       projectSummary: "N/A",
       builtUsing: ["mdi:react", "flowbite:css-solid"],
       imageClass: "cakes-co",
+      liveView: "https://mzag-cakesco.netlify.app",
+      githubRepo:
+        "https://github.com/MarcusZagorski/Module-HTML-CSS/tree/main/Cakes-Co",
     },
   ];
   return (
@@ -75,8 +85,12 @@ const Projects = ({ width, projectsRef }) => {
                     })}
                   </p>
                   <div className="project-btns">
-                    <button>Live View</button>
-                    <button>Github</button>
+                    <button>
+                      <a href={projects[projectIndex].liveView}>Live View</a>
+                    </button>
+                    <button>
+                      <a href={projects[projectIndex].githubRepo}>Github</a>
+                    </button>
                   </div>
                 </div>
                 <div

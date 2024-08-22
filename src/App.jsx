@@ -28,7 +28,12 @@ function App() {
   return (
     <>
       <Nav width={width} refs={refs} />
-      <Hero width={width} heroRef={refs.heroRef} />
+      <Hero
+        width={width}
+        heroRef={refs.heroRef}
+        projectsRef={refs.projectsRef}
+        contactRef={refs.contactRef}
+      />
       <AboutMe width={width} aboutMeRef={refs.aboutMeRef} />
       <Projects width={width} projectsRef={refs.projectsRef} />
       <Blog blogRef={refs.blogRef} />

@@ -85,6 +85,7 @@ ul li a:hover .filled {
   grid-column: 3;
   width: 1.5rem;
   justify-self: end;
+  z-index: 4;
 }
 
 .hamburger-menu {
@@ -115,21 +116,19 @@ ul li a:hover .filled {
   font-weight: 100;
 }
 
-.hamburger-closed:nth-child(1) {
-  transform: rotate(45deg);
-  height: 0.25rem;
-  background: white;
-  grid-template-rows: repeat(3, 1fr);
+.hamburger-open-menu {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
 }
 
-.hamburger-closed:nth-child(2) {
-  transform: rotate(-45deg) translate(5px, -6px);
-  height: 0.25rem;
-  background: white;
-  grid-template-rows: repeat(3, 1fr);
-}
-
-.middle-hamburger {
-  opacity: 0;
-  appearance: 0;
+.hamburger-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: var(--heading-mobile);
+  color: white;
 }

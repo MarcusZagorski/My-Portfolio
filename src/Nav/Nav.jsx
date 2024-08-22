@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./Nav.css";
 import LogoDesign from "../assets/logo-design.png";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Nav = ({ width, refs }) => {
   const links = [
@@ -60,51 +60,71 @@ const Nav = ({ width, refs }) => {
         CONTACT ME
       </button>
     </nav>
-  ) : !hamburgerClicked ? (
-    <nav>
-      <img
-        src={LogoDesign}
-        alt="My logo displaying my initials MZ (Marcus Zagorski)"
-      />
-      <div className="hamburger" onClick={handleHamburger}>
-        <span className="hamburger-menu"></span>
-        <span className="hamburger-menu"></span>
-        <span className="hamburger-menu"></span>
-      </div>
-    </nav>
   ) : (
-    <div className="mobile-nav-container">
-      <nav className="hamburger-open">
-        <img
+    <>
+      <nav>
+        <motion.img
           src={LogoDesign}
           alt="My logo displaying my initials MZ (Marcus Zagorski)"
         />
-        <div className="hamburger" onClick={handleHamburger}>
-          <span className="hamburger-closed"></span>
-          <span className="hamburger-closed"></span>
+        <div
+          className="hamburger"
+          onClick={() => handleHamburger()}
+          style={
+            hamburgerClicked
+              ? { background: "none" }
+              : { background: "linear-gradient(#a466d9, #62318c)" }
+          }
+        >
+          <motion.span
+            className="hamburger-menu"
+            animate={
+              hamburgerClicked
+                ? { transform: "translate(0px, 8px) rotate(45deg)" }
+                : { transform: "translate(0px, 0px) rotate(0)" }
+            }
+          ></motion.span>
+          <motion.span
+            className="hamburger-menu"
+            initial={{ opacity: 1 }}
+            animate={hamburgerClicked ? { opacity: 0 } : { opacity: 1 }}
+          ></motion.span>
+          <motion.span
+            className="hamburger-menu"
+            animate={
+              hamburgerClicked
+                ? { transform: "translate(0px, -8px) rotate(-45deg)" }
+                : { transform: "translate(0px, 0px) rotate(0)" }
+            }
+          ></motion.span>
         </div>
       </nav>
-
-      <div className="links-container">
-        {links.map((link, index) => {
-          return (
-            <p
-              onClick={() => {
-                link.ref.current?.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-                isHamburgerClicked(false);
-              }}
-              style={link.inView ? { color: "#cec0da" } : { color: "white" }}
+      <motion.div
+        className="hamburger-open-menu"
+        animate={
+          hamburgerClicked
+            ? { width: "100vw", height: "100vh", background: "rgb(106 67 137)" }
+            : { width: "0", height: "0", background: "none" }
+        }
+      >
+        <div className="hamburger-menu-list">
+          {links.map((link, index) => (
+            <motion.p
               key={index}
+              animate={hamburgerClicked ? { opacity: 1 } : { opacity: 0 }}
+              onClick={() => {
+                link.ref.current.scrollIntoView({
+                  behavior: "smooth",
+                });
+                isHamburgerClicked(!hamburgerClicked);
+              }}
             >
               {link.link}
-            </p>
-          );
-        })}
-      </div>
-    </div>
+            </motion.p>
+          ))}
+        </div>
+      </motion.div>
+    </>
   );
 };
 

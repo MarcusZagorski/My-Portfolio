@@ -219,4 +219,5 @@
   color: white;
   border: none;
   box-shadow: var(--cta-btn-shadow);
+  cursor: pointer;
 }
