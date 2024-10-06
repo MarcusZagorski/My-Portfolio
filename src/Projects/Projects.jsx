@@ -86,10 +86,17 @@ const Projects = ({ width, projectsRef }) => {
                   </p>
                   <div className="project-btns">
                     <button>
-                      <a href={projects[projectIndex].liveView}>Live View</a>
+                      <a href={projects[projectIndex].liveView} target="_blank">
+                        Live View
+                      </a>
                     </button>
                     <button>
-                      <a href={projects[projectIndex].githubRepo}>Github</a>
+                      <a
+                        href={projects[projectIndex].githubRepo}
+                        target="_blank"
+                      >
+                        Github
+                      </a>
                     </button>
                   </div>
                 </div>
